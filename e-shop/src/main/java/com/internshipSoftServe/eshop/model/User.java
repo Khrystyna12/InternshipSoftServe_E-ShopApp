@@ -45,6 +45,6 @@ public class User {
 
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "buyer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Order> orders;
 }

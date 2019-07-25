@@ -46,7 +46,10 @@ public class Product {
     
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @ManyToMany
+    @JoinTable(name = "products_comments",
+            joinColumns =@JoinColumn (name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "comment_id"))
     private List<Comment> comments;
 }
 
