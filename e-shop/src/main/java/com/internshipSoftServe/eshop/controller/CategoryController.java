@@ -17,10 +17,6 @@ public class CategoryController {
 	
 	public CategoryController(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
-        Category n = new Category();
-        n.setName("Category1");
-        n.setDescription("Description of category1");
-        categoryRepository.save(n);
     }
 	
 	@GetMapping(path="/add")
