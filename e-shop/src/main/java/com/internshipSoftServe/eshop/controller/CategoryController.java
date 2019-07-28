@@ -1,9 +1,9 @@
 package com.internshipSoftServe.eshop.controller;
 
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 
-import org.springframework.beans.BeanUtils;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.internshipSoftServe.eshop.model.Category;
 import com.internshipSoftServe.eshop.repository.CategoryRepository;
 
-@Controller
+@RestController
+@Transactional
 @RequestMapping(path="/shop")
 public class CategoryController {
 
@@ -30,26 +32,35 @@ public class CategoryController {
     public @ResponseBody Iterable<Category> getAllCategories() {
         return categoryRepository.findAll();
     }
-
-    @PostMapping("/categories")
-    public Category createCategory(@Valid @RequestBody Category category) {
-        return categoryRepository.save(category);
-    }
-
-    @PutMapping("/categories/{categoryId}")
-    public Category updateCategory(@PathVariable Long categoryId, @Valid @RequestBody Category category) {
-    	Category categoryDB = update(categoryId, category);
-        return categoryDB;
+	
+	@GetMapping("/categories/{categoryId}")
+	  public Category getOneCategory(@PathVariable("categoryId") long categoryId) {
+	    return categoryRepository.findById(categoryId)
+	      .orElse(null);
+	}
+	
+	@PostMapping("/categories")
+    public ResponseEntity<Category> createNewCategory(@Valid @RequestBody Category category){
+		return ResponseEntity.ok(categoryRepository.save(category));
     }
     
-    public Category update(Long id, Category category) {
-        Category categoryFromDB = categoryRepository.findById(id);
-        BeanUtils.copyProperties(category, categoryFromDB, "id", "products");
-        return categoryRepository.save(categoryFromDB);
+    @PutMapping("/categories/{categoryId}")
+    public ResponseEntity<Category> updateCategory(@PathVariable("categoryId") long categoryId, @RequestBody Category category2) {
+      return categoryRepository.findById(categoryId)
+          .map(category1 -> {
+              category1.setName(category2.getName());
+              category1.setDescription(category2.getDescription());
+              Category updated = categoryRepository.save(category1);
+              return ResponseEntity.ok().body(updated);
+          }).orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/categories/{categoryId}")
-    public void deleteCategory(@PathVariable Long categoryId){
-        categoryRepository.deleteById(categoryId);
+    public ResponseEntity<Category> deleteCategory(@PathVariable("categoryId") long categoryId){
+    	if (!categoryRepository.findById(categoryId).isPresent()) {
+            ResponseEntity.badRequest().build();
+        }
+    	categoryRepository.deleteById(categoryId);
+    	return ResponseEntity.ok().build();
     }
 }
