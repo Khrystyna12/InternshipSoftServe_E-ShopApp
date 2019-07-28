@@ -28,6 +28,10 @@ public class Product {
     @Column(length = 255)
     @Size(max = 255)
     private String description;
+    
+    @Column(length = 255)
+    @Size(max = 255)
+    private String photo;
 
     @ToString.Exclude
     @JsonIgnore
@@ -46,10 +50,7 @@ public class Product {
     
     @ToString.Exclude
     @JsonIgnore
-    @ManyToMany
-    @JoinTable(name = "products_comments",
-            joinColumns =@JoinColumn (name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "comment_id"))
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<Comment> comments;
 }
 
