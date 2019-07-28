@@ -20,15 +20,25 @@ public class Comment {
     @Size(max = 255)
     private String text;
 
-    private LocalDateTime dateCreation;
+    private LocalDateTime created_at;
 
     @ToString.Exclude
     @JsonIgnore
     @ManyToOne
-    private User authorComments;
+    private User user;
 
     @ToString.Exclude
     @JsonIgnore
-    @ManyToMany(mappedBy = "comments")
-    private List<Product> products;
+    @ManyToOne
+    private Product product;
+    
+    @ToString.Exclude
+    @JsonIgnore
+    @ManyToOne
+    private Comment comment;
+    
+    @ToString.Exclude
+    @JsonIgnore
+    @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL)
+    private List<Comment> comments;
 }

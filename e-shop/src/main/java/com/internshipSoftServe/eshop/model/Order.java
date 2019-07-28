@@ -26,11 +26,11 @@ public class Order {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
 	
-	private LocalDateTime dateCreation;
+	private LocalDateTime created_at;
 	
 	@Column(length = 255)
     @Size(max = 255)
-    private String description;
+    private String comment;
 	
 	@ToString.Exclude
     @JsonIgnore
