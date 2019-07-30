@@ -34,9 +34,9 @@ public class CategoryController {
     }
 	
 	@GetMapping("/categories/{categoryId}")
-	  public Category getOneCategory(@PathVariable("categoryId") long categoryId) {
+	public Category getOneCategory(@PathVariable("categoryId") long categoryId) {
 	    return categoryRepository.findById(categoryId)
-	      .orElse(null);
+	    		.orElseThrow(RuntimeException::new);
 	}
 	
 	@PostMapping("/categories")
