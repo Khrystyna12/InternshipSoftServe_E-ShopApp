@@ -20,7 +20,7 @@ public class Articles {
 
     private String text;
 
-    private LocalDateTime dateCreation;
+    private LocalDateTime created_at;
 
     @ToString.Exclude
     @ManyToOne
@@ -32,7 +32,7 @@ public class Articles {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", text='" + text + '\'' +
-                ", dateCreation=" + dateCreation +
+                ", created_at=" + created_at +
                 ", product=" + product +
                 '}';
     }

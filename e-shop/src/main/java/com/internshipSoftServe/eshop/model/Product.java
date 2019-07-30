@@ -13,9 +13,20 @@ import javax.validation.constraints.Size;
 @Entity
 @Data
 public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	public Product() {}
+	
+    public Product(@Size(max = 45) String name, int price, int quantity, @Size(max = 255) String description,
+			@Size(max = 255) String photo) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+		this.description = description;
+		this.photo = photo;
+	}
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Column(length = 45)
     @Size(max = 45)
@@ -28,6 +39,10 @@ public class Product {
     @Column(length = 255)
     @Size(max = 255)
     private String description;
+    
+    @Column(length = 255)
+    @Size(max = 255)
+    private String photo;
 
     @ToString.Exclude
     @JsonIgnore
@@ -46,10 +61,55 @@ public class Product {
     
     @ToString.Exclude
     @JsonIgnore
-    @ManyToMany
-    @JoinTable(name = "products_comments",
-            joinColumns =@JoinColumn (name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "comment_id"))
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<Comment> comments;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 }
 

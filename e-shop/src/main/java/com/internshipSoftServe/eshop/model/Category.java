@@ -19,8 +19,15 @@ import lombok.ToString;
 @Entity
 @Data
 public class Category {
+	public Category() {}
+
+	public Category(@Size(max = 45) String name, @Size(max = 255) String description) {
+		this.name = name;
+		this.description = description;
+	}
+
 	@Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
 	
 	@Column(unique = true, length = 45)
@@ -50,6 +57,10 @@ public class Category {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public List<Product> getProducts() {
+		return products;
 	}
 
 }

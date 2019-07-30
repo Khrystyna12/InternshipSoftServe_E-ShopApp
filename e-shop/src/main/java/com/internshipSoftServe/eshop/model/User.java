@@ -23,15 +23,27 @@ public class User {
 
     @Column(length = 45)
     @Size(max = 45)
-    private String login;
+    private String username;
 
-    @Column(length = 45)
-    @Size(max = 45)
+    @Column(length = 255)
+    @Size(max = 255)
     private String password;
+    
+    @Column(length = 255)
+    @Size(max = 255)
+    private String first_name;
+    
+    @Column(length = 255)
+    @Size(max = 255)
+    private String last_name;
+    
+    @Column(length = 255)
+    @Size(max = 255)
+    private String email;
 
     private boolean active;
 
-    private LocalDateTime date;
+    private LocalDateTime created_at;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
@@ -40,7 +52,7 @@ public class User {
 
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "authorComments", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Comment> comments;
 
     @ToString.Exclude
