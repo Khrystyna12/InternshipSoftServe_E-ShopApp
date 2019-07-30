@@ -51,17 +51,17 @@ public class Product {
     
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product")
     private List<OrderItem> orderItems;
     
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product")
     private List<Articles> articles;
     
     @ToString.Exclude
     @JsonIgnore
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product")
     private List<Comment> comments;
 
 	public String getName() {
