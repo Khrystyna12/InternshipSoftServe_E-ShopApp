@@ -8,10 +8,12 @@ import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "articles")
+
 @Data
 public class Articles {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(length = 45)
@@ -25,17 +27,6 @@ public class Articles {
     @ToString.Exclude
     @ManyToOne
     private Product product;
-
-    @Override
-    public String toString() {
-        return "Articles{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", text='" + text + '\'' +
-                ", created_at=" + created_at +
-                ", product=" + product +
-                '}';
-    }
 
     public Long getId() {
         return id;
