@@ -111,5 +111,13 @@ public class Product {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
+
+	public List<Articles> getArticles() {
+		return articles;
+	}
+
+	public void setArticles(List<Articles> articles) {
+		this.articles = articles;
+	}
 }
 
