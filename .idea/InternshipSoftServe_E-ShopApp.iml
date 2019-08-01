@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/EShopApplication.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot-starter-web:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot-devtools:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot-starter-data-jpa:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot-maven-plugin:2.1.6.RELEASE" level="project" />
+  </component>
+</module>
