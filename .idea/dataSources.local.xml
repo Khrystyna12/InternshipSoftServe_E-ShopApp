@@ -10,5 +10,13 @@
       <user-name>postgres</user-name>
       <introspection-schemas>@:@</introspection-schemas>
     </data-source>
+    <data-source name="d823iprm3nkr5a@ec2-54-217-219-235.eu-west-1.compute.amazonaws.com" uuid="43588c9a-926e-4c79-baf1-c5ea9318bb31">
+      <database-info product="PostgreSQL" version="11.4 (Ubuntu 11.4-1.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="0">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gvucvkzmaktram</user-name>
+    </data-source>
   </component>
 </project>
