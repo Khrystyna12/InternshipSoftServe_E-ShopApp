@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ea071c-1f95-4086-b760-dacaf91726f0" name="Default Changelist" comment="Changed ArticlesController">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Articles.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Articles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/target/classes/com/internshipSoftServe/eshop/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/src/main/java/com/internshipSoftServe/eshop/EShopApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/src/test/java/com/internshipSoftServe/eshop/EShopApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/bin/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-shop/target/production/InternshipSoftServe_E-ShopApp/META-INF/InternshipSoftServe_E-ShopApp.kotlin_module" beforeDir="false" />
     </list>
     <list id="a02be1b7-bc71-4525-a52c-a5a6673c0a26" name="Apply: added: entity User, enum Role, file gitignore" comment="" />
     <list id="3b844c25-19ed-45d9-a2c1-47b510711b85" name="Apply: Added: Order, OrderItem" comment="" />
@@ -131,11 +130,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/e-shop/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <caret line="11" column="39" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/e-shop/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -150,8 +179,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,6 +203,8 @@
         <option value="$PROJECT_DIR$/e-shop/pom.xml" />
         <option value="$PROJECT_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/controller/ArticlesController.java" />
         <option value="$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties" />
+        <option value="$PROJECT_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/e-shop/src/main/resources/application.properties" />
       </list>
     </option>
@@ -196,8 +227,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="853" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="19" />
+    <option name="y" value="18" />
     <option name="width" value="1073" />
     <option name="height" value="1036" />
   </component>
@@ -241,55 +273,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternshipSoftServe_E-ShopApp" type="462c0819:PsiDirectoryNode" />
-              <item name="e-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternshipSoftServe_E-ShopApp" type="462c0819:PsiDirectoryNode" />
-              <item name="e-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eshop" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternshipSoftServe_E-ShopApp" type="462c0819:PsiDirectoryNode" />
-              <item name="e-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eshop" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternshipSoftServe_E-ShopApp" type="462c0819:PsiDirectoryNode" />
-              <item name="e-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eshop" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternshipSoftServe_E-ShopApp" type="462c0819:PsiDirectoryNode" />
-              <item name="e-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eshop" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternshipSoftServe_E-ShopApp" type="b2602c69:ProjectViewProjectNode" />
@@ -378,7 +361,7 @@
       <workItem from="1564603389791" duration="449000" />
       <workItem from="1564646663756" duration="11676000" />
       <workItem from="1564670812930" duration="969000" />
-      <workItem from="1564678551296" duration="5711000" />
+      <workItem from="1564678551296" duration="9741000" />
     </task>
     <task id="LOCAL-00001" summary="reverted to 2 commit and added class Articles">
       <created>1564081054768</created>
@@ -436,16 +419,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564678634349</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added SwaggerConfig">
+      <created>1564691556707</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564691556707</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75727000" />
+    <option name="totallyTimeSpent" value="79757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="19" y="18" width="1073" height="1036" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.1652452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.30602172" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -455,7 +446,7 @@
       <window_info id="Web" order="7" sideWeight="0.5016129" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22510822" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2300885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,7 +467,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="CDI" order="6" weight="0.3296328" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.17750533" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32872656" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.3296328" />
@@ -601,7 +592,8 @@
     <MESSAGE value="Added ArticlesController" />
     <MESSAGE value="Changed ArticlesController" />
     <MESSAGE value="Added swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added swagger" />
+    <MESSAGE value="Added SwaggerConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SwaggerConfig" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -837,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/e-shop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/controller/ArticlesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -876,20 +861,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43588c9a-926e-4c79-baf1-c5ea9318bb31/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-shop/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="453">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43588c9a-926e-4c79-baf1-c5ea9318bb31/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-shop/src/main/java/com/internshipSoftServe/eshop/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e-shop/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <caret line="11" column="39" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-shop/src/main/resources/application-heroku.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
