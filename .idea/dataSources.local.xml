@@ -18,5 +18,14 @@
       <secret-storage>master_key</secret-storage>
       <user-name>gvucvkzmaktram</user-name>
     </data-source>
+    <data-source name="dbsai92o28405o@ec2-174-129-194-188.compute-1.amazonaws.com" uuid="860f2672-2077-42fa-9b9e-6e850ce0c354">
+      <database-info product="PostgreSQL" version="11.4 (Ubuntu 11.4-1.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="11.4" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>hnbgmtpxqpkmxt</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
   </component>
 </project>
